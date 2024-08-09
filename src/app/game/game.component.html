@@ -1,0 +1,10 @@
+<div style="text-align: center;">
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <div>
+      <p>Score: {{ score }}</p>
+      <p>Strike Rate: {{ strikeRate.toFixed(2) }}</p>
+      <p *ngIf="gameOver">You are a Loser!</p>
+    </div>
+    <button (click)="restartGame()">Do you want to Try?</button>
+  </div>
+  
